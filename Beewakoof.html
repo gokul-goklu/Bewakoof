@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      #desktop_view,
+      #mobile_view {
+        display: none;
+      }
+      @media screen and (min-width: 700px) {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        #desktop_view {
+          display: flex;
+          flex-direction: column;
+        }
+        .second_layer {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          padding: 10px;
+          border-bottom: 1px solid silver;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+        }
+        .icontext {
+          list-style-type: none;
+          font-size: 10px;
+          font-weight: lighter;
+        }
+        .iconstyling {
+          display: flex;
+          gap: 15px;
+        }
+        .topicons {
+          display: flex;
+          background-color: #e3e3e3;
+          padding: 5px;
+          justify-content: space-around;
+        }
+        .logo_icons {
+          display: flex;
+          align-items: center;
+          gap: 65px;
+        }
+
+        .logo_icon_text {
+          list-style-type: none;
+        }
+        .logo_icon_styling {
+          display: flex;
+          gap: 30px;
+        }
+        .right_input_icons {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+        }
+        .input_box {
+          padding: 10px;
+          border-radius: 8px;
+          padding-right: 76px;
+          border: 1px solid silver;
+        }
+        .input_icons {
+          display: flex;
+          gap: 10px;
+        }
+      }
+
+      @media screen and (max-width: 699px) {
+        #mobile_view {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          /* gap: 560px; */
+          background-color: aliceblue;
+          border-radius: 21px;
+          padding: 12px;
+        }
+
+        .img_left {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+        .header {
+          background-color: aliceblue;
+        }
+        .content_right {
+          display: flex;
+          gap: 15px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="mobile_view">
+        <div class="img_left">
+          <img
+            src="https://images.bewakoof.com/web/ic-web-head-hamburger.svg"
+            class="mMenuBtn"
+          />
+          <img
+            src="https://images.bewakoof.com/web/ic-web-head-bwk-primary-logo-eyes.svg"
+            alt="bewakoof_logo"
+            style="height: 18px; margin: 16px 0px; width: 40px"
+          />
+        </div>
+        <div class="content_right">
+          <img
+            src="https://images.bewakoof.com/web/ic-web-head-search.svg"
+            class="header-icon"
+            alt="search-icon"
+          />
+          <img
+            src="https://images.bewakoof.com/web/ic-web-head-wishlist.svg"
+            class="header-icon"
+            alt="wish-list"
+          />
+          <img
+            src="https://images.bewakoof.com/web/ic-web-head-cart.svg"
+            class="header-icon"
+            alt="shopping-bag"
+          />
+        </div>
+      </div>
+
+      <div id="desktop_view">
+        <div class="topicons">
+          <ul class="iconstyling">
+            <li class="icontext">Offers</li>
+            <li class="icontext">Fanbook</li>
+            <li class="icontext">Download App</li>
+            <li class="icontext">TriBe Membership</li>
+          </ul>
+          <ul class="iconstyling">
+            <li class="icontext">Contact us</li>
+            <li class="icontext">Track Order</li>
+          </ul>
+        </div>
+        <div class="second_layer">
+          <div class="logo_icons">
+            <div class="img">
+              <img
+                src="https://images.bewakoof.com/web/ic-desktop-bwkf-trademark-logo.svg"
+                alt="bewakoof_logo"
+                title="Bewakoof.com"
+                style="height: 20px; width: 147px"
+              />
+            </div>
+            <div class="lists">
+              <ul class="logo_icon_styling">
+                <li class="logo_icon_text">
+                  <span>Men</span>
+                </li>
+                <li class="logo_icon_text">
+                  <span>Women</span>
+                </li>
+                <li class="logo_icon_text">
+                  <span>Mobile Covers</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="right_input_icons">
+            <div class="input_boxing">
+              <input
+                class="input_box"
+                type="text"
+                placeholder="search by product"
+              />
+            </div>
+            <div class="login">
+              <span>Login</span>
+            </div>
+
+            <div class="input_icons">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
